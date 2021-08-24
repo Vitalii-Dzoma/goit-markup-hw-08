@@ -1,0 +1,58 @@
+.social-list {
+  @extend %flex;
+  justify-content: space-around;
+  @extend %list;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-link {
+  text-decoration: none;
+  display: block;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: backround-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .social-item &:hover,
+  .social-item &:focus {
+    background-color: var(--accent-color);
+    border-radius: 50%;
+
+    width: 44px;
+    height: 44px;
+    @extend %flexcenter;
+  }
+  &:hover .social-logo,
+  &:focus .social-logo {
+    fill: var(--primary-backround-color);
+  }
+}
+
+.social-logo {
+  fill: var(--social-icon-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: var(--primary-backround-color);
+  }
+}
+
+.social {
+  margin-left: 70px;
+  margin-top: 10px;
+}
+
+.social-text {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #ffffff;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

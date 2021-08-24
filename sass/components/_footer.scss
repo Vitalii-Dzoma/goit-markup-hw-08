@@ -1,0 +1,112 @@
+.footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  transition: backround-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &-address {
+    list-style: none;
+    font-style: normal;
+    line-height: var(--text-line-height);
+  }
+}
+.page-footer {
+  width: 1200px;
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-location {
+  font-size: 14px;
+  color: var(--primary-backround-color);
+  margin-bottom: 9px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-list {
+  @extend %list;
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.footer-link {
+  display: block;
+
+  font-size: 14px;
+  text-decoration: none;
+  color: #ffffff60;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &__decorated:hover,
+  &__decorated:focus,
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.footer-link__decorated {
+  display: block;
+  color: var(--primary-text-color);
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-size: 24px;
+  letter-spacing: 0.03em;
+  line-height: 1.19;
+  margin-bottom: 20px;
+  padding: 0;
+  color: var(--primary-backround-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-item:hover,
+.footer-item:focus {
+  color: var(--accent-color);
+}
+
+.footer-logo {
+  fill: var(--primary-backround-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe {
+  margin-left: auto;
+  margin-top: 8px;
+  &-text {
+    align-self: flex-start;
+  }
+}
+
+.subscribe-button {
+  width: 200px;
+  height: 50px;
+  padding-right: 22px;
+  @extend %flexcenter;
+}
+
+.subscribe-input {
+  width: 358px;
+  min-height: 50px;
+  margin-right: 12px;
+  background-color: var(--footer-color);
+  border-color: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &::placeholder {
+    padding-left: 16px;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0, 03em;
+  }
+}
+
+.footer-form {
+  display: flex;
+  justify-content: space-between;
+}

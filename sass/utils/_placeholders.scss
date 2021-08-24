@@ -1,0 +1,35 @@
+%list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+%flex {
+  display: flex;
+}
+
+%flexcenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+%absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+%section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}

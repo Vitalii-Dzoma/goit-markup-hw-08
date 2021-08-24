@@ -1,0 +1,21 @@
+.hero {
+  max-width: 1600px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: var(--footer-color);
+  background-image: linear-gradient(to right, #2f303a66 40%, #2f303a66 60%), url(../images/img.jpg);
+  padding: 200px 0px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &-title {
+    font-size: 44px;
+    text-align: center;
+    color: var(--primary-backround-color);
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    line-height: 1.36;
+    font-weight: var(--large-font-weight);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
