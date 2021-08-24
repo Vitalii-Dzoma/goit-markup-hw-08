@@ -3,7 +3,8 @@
 
   &-list {
     @extend %list;
-    @extend %flex;
+    // @extend %flex;
+    display: none;
   }
 }
 

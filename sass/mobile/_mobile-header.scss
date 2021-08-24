@@ -1,0 +1,30 @@
+.button-menu {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  margin-left: 150px;
+  & .icon-menu {
+    display: none;
+  }
+}
+.button-menu.is-open .icon-menu {
+  display: block;
+}
+.button-menu.is-open .icon-cross {
+  display: none;
+}
+
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 40px;
+  background-color: var(--primary-backround-color);
+  &.is-open {
+    display: block;
+  }
+}

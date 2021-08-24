@@ -2,6 +2,7 @@
   line-height: var(--title-line-height);
   font-weight: var(--medium-font-weight);
   border-bottom: 1px solid #ececec;
+  position: relative;
 }
 
 .page-header__link {
@@ -26,6 +27,9 @@
   padding: 0;
   margin-top: 0;
   margin-bottom: 0;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .page-header__icon {
@@ -46,7 +50,7 @@
 }
 
 .header-link {
-  display: block;
+  display: inline-flex;
   color: var(--primary-text-color);
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
