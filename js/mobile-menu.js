@@ -2,6 +2,7 @@
     
     const menuBtnRef = document.querySelector("[data-menu-button]");
     const mobileMenuBRef = document.querySelector("[data-menu]");
+    const mobileLogoBRef = document.querySelector("[data-logo]");
  
 
 //   const toggleMenu = () => {
@@ -22,6 +23,7 @@
         menuBtnRef.setAttribute("aria-expanded", !expanded);
         
         mobileMenuBRef.classList.toggle("is-open");
+        mobileLogoBRef.classList.toggle("visually-hidden");
     });
     
 //   openMenuBtn.addEventListener('click', toggleMenu);
