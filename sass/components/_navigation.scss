@@ -58,6 +58,8 @@
   margin-bottom: 32px;
 }
 
-// .page-header__item + .page-header__item {
-//   margin-left: 50px;
-// }
+.page-header__item {
+  &:last-child {
+    margin-bottom: 32px;
+  }
+}

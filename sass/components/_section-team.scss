@@ -11,8 +11,8 @@
 }
 
 .section-team__list {
-  @extend %flex;
-  justify-content: space-around;
+  display: block;
+
   @extend %list;
 }
 

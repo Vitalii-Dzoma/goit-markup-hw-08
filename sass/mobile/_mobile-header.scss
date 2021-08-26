@@ -4,7 +4,7 @@
   padding: 0;
   border: none;
   background-color: transparent;
-  margin-left: 100px;
+  margin-left: 130px;
   & .icon-menu {
     display: none;
   }
@@ -33,6 +33,8 @@
   &.is-open {
     display: flex;
     flex-direction: column;
+
+    justify-content: space-between;
   }
 
   @media screen and (max-width: 767px) {
@@ -43,6 +45,7 @@
     width: 100%;
     height: 100vh;
     padding: 0 40px;
+    padding-bottom: 48px;
   }
 
   @media screen and (min-width: 768px) {
