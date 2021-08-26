@@ -12,6 +12,10 @@
   margin: 0 auto;
   font-size: 14px;
   line-height: var(--text-line-height);
+  @include respond-to(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .section-title__logo {
@@ -27,6 +31,14 @@
   border-radius: 4px;
   margin-bottom: 30px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include respond-to(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.section-title__item {
+  width: 354px;
 }
 .section-title__item:not(:last-child) {
   margin-bottom: 30px;

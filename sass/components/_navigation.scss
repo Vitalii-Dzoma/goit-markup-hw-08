@@ -5,19 +5,21 @@
     position: relative;
     @extend %list;
     @extend %flex;
-    @media screen and (max-width: 768px) {
-      flex-direction: column;
-      align-items: start;
+    flex-direction: column;
+    @include respond-to(tablet) {
+      flex-direction: row;
+      margin: 0;
+      padding: 0;
     }
   }
 }
 
 .navigation-link {
-  display: block;
   color: var(--primary-text-color);
   text-decoration: none;
 
-  @media screen and (min-width: 768px) {
+  @include respond-to(tablet) {
+    display: block;
     font-size: 14px;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -55,11 +57,23 @@
 }
 
 .navigation-item:not(:last-child) {
-  margin-bottom: 32px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
+  }
+  @include respond-to(tablet) {
+    margin-right: 40px;
+  }
 }
 
 .page-header__item {
   &:last-child {
-    margin-bottom: 32px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 32px;
+    }
+  }
+  @include respond-to(tablet) {
+    .page-header__item + .page-header__item {
+      margin-left: 50px;
+    }
   }
 }
