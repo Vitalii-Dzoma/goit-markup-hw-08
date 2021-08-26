@@ -33,3 +33,9 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
+@mixin listItem($l, $t, $q, $gap) {
+  margin-left: $l;
+  margin-top: $t;
+  flex-basis: calc(100% / #{$q} - #{$gap});
+}
