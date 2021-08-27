@@ -76,4 +76,14 @@
       margin-left: 50px;
     }
   }
+  @include respond-to(desktop) {
+    .navigation-item:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+}
+@include respond-to(desktop) {
+  .page-header__item:last-child {
+    margin-left: 50px;
+  }
 }

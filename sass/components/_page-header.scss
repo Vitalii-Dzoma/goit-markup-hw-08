@@ -97,6 +97,13 @@
     margin-top: 0;
     margin-bottom: 0;
   }
+  @include respond-to(desktop) {
+    margin-left: 305px;
+    align-items: center;
+    flex-direction: row;
+    line-height: var(--text-line-height);
+    padding: 0;
+  }
 }
 
 .page-header__icon {
