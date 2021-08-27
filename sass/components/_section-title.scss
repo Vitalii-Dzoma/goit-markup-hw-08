@@ -37,18 +37,24 @@
   }
 }
 
-.section-title__item {
-  width: 354px;
-}
 .section-title__item:not(:last-child) {
   margin-bottom: 30px;
 }
-
+@include respond-to(tablet) {
+  .section-title__item {
+    width: 354px;
+  }
+  .section-title__item:nth-child(odd) {
+    margin-right: 30px;
+  }
+}
 .section-title__description {
   font-size: 16px;
   margin-bottom: 10px;
   text-transform: uppercase;
-  text-align: center;
+  @media screen and(max-width:767px) {
+    text-align: center;
+  }
 }
 
 .section-title__text {

@@ -13,6 +13,11 @@
 .section-team__list {
   display: block;
 
+  @include respond-to(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 60px) / 2);
+  }
   @extend %list;
 }
 
@@ -24,8 +29,12 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  margin-bottom: 30px;
 
+  @include respond-to(tablet) {
+    margin-right: 30px;
+  }
+}
 .desc {
   text-align: center;
   padding: 30px 32px 30px 32px;
@@ -45,8 +54,19 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.section-team__title {
+  display: block;
+  font-size: 36px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
 .section-team__img {
   width: 100%;
   height: auto;
   display: block;
+  @include respond-to(tablet) {
+    width: 354px;
+  }
 }

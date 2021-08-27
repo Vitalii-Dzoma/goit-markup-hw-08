@@ -162,8 +162,7 @@
     width: 100%;
   }
   @include respond-to(tablet) {
-    width: 756px;
-    display: flex;
+    width: 800px;
   }
 }
 

@@ -12,17 +12,31 @@
   }
 }
 .page-footer {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  @media (max-width: 767px) {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  @include respond-to(tablet) {
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: space-evenly;
+  }
 }
 
 .footer-location {
@@ -85,6 +99,7 @@
 
 .subscribe {
   margin-left: auto;
+  margin-right: auto;
   margin-top: 8px;
   display: flex;
   flex-direction: column;

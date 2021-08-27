@@ -2,13 +2,6 @@
   @extend %section;
 }
 
-.section-team__title {
-  font-size: 36px;
-  text-align: center;
-  margin: 0;
-  margin-bottom: 50px;
-}
-
 .section__list {
   @extend %flex;
   flex-wrap: wrap;
