@@ -55,6 +55,14 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include respond-to(desktop) {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
 }
 
 body {
@@ -66,7 +74,9 @@ body {
 img {
   display: block;
   max-width: 100%;
-  height: auto;
+  @media (max-width: 767px) {
+    height: auto;
+  }
 }
 
 input:-webkit-autofill,

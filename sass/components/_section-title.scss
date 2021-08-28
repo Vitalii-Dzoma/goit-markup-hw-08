@@ -9,12 +9,18 @@
 
 .section-title__list {
   @extend %list;
-  margin: 0 auto;
+
   font-size: 14px;
   line-height: var(--text-line-height);
+  @media (max-width: 767px) {
+    margin: 0 auto;
+  }
   @include respond-to(tablet) {
     display: flex;
     flex-wrap: wrap;
+  }
+  @include respond-to(desktop) {
+    flex-wrap: nowrap;
   }
 }
 
@@ -35,6 +41,13 @@
     display: flex;
     flex-wrap: wrap;
   }
+  @include respond-to(desktop) {
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+  }
 }
 
 .section-title__item:not(:last-child) {
@@ -48,6 +61,15 @@
     margin-right: 30px;
   }
 }
+@include respond-to(desktop) {
+  .section-title__item {
+    width: 270px;
+    &:not(:nth-child(4)) {
+      margin-right: 30px;
+    }
+  }
+}
+
 .section-title__description {
   font-size: 16px;
   margin-bottom: 10px;

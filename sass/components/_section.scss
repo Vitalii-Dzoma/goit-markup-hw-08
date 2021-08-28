@@ -4,8 +4,11 @@
 
 .section__list {
   @extend %flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+
+  @media (max-width: 1199px) {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
   @extend %list;
 }
 
@@ -16,7 +19,9 @@
   border: 1px solid var(--social-icon-color);
   border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+  @include respond-to(desktop) {
+    width: 170px;
+  }
   &:hover .section__logo,
   &:focus .section__logo {
     fill: var(--accent-color);
@@ -39,4 +44,10 @@
   fill: var(--social-icon-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@include respond-to(desktop) {
+  .section__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }

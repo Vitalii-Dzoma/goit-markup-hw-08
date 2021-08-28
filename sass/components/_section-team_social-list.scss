@@ -42,9 +42,13 @@
 }
 
 .social {
-  // margin-left: 70px;
-  // margin-top: 10px;
-  margin-bottom: 60px;
+  @media (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+  @include respond-to(desktop) {
+    margin-left: 70px;
+    margin-top: 10px;
+  }
 }
 
 .social-text {

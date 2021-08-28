@@ -18,6 +18,10 @@
     flex-wrap: wrap;
     flex-basis: calc((100% - 60px) / 2);
   }
+  @include respond-to(desktop) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
   @extend %list;
 }
 
