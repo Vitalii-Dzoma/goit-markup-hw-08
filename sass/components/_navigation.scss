@@ -19,10 +19,8 @@
   text-decoration: none;
 
   @include respond-to(tablet) {
-    display: block;
     font-size: 14px;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-bottom: 30px;
   }
 
   font-weight: 500;

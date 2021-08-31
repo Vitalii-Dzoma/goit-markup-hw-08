@@ -10,10 +10,16 @@
 
 .social-link {
   text-decoration: none;
-  display: block;
+  // display: block;
   width: 44px;
   height: 44px;
-  padding: 12px;
+  // padding: 12px;
+
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   transition: backround-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -60,5 +66,7 @@
   margin-bottom: 20px;
   color: #ffffff;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  text-align: center;
+  @media (max-width: 1199px) {
+    text-align: center;
+  }
 }
