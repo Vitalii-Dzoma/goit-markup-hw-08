@@ -5,6 +5,8 @@
   margin: 0 auto;
   text-align: center;
   background-color: var(--footer-color);
+  background-repeat: no-repeat;
+  background-size: cover;
   @media (max-width: 767px) {
     background-image: linear-gradient(to right, #2f303a66 40%, #2f303a66 60%),
       url(../images/header-mobile.jpg);
