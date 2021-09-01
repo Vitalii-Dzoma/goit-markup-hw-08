@@ -33,7 +33,7 @@
   &.is-open {
     display: flex;
     flex-direction: column;
-
+    overflow: scroll;
     justify-content: space-between;
   }
   @include respond-to(tablet) {
@@ -55,6 +55,8 @@
     left: 0;
     top: 0;
     transform: translate(370px, 15px);
+    background: transparent;
+    border: none;
     @include respond-to(tablet) {
       display: none;
     }
