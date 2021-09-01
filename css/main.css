@@ -1089,7 +1089,7 @@
 
 @media (min-width: 767px) {
   .section-portfolio__card {
-    max-width: 354px;
+    max-width: 370px;
     -ms-flex-preferred-size: calc((100% - 60px) / 2);
         flex-basis: calc((100% - 60px) / 2);
     margin-right: 30px;
@@ -1261,7 +1261,6 @@
 }
 
 .modal-wrapper {
-  position: relative;
   margin-bottom: 30px;
   -webkit-box-pack: end;
       -ms-flex-pack: end;

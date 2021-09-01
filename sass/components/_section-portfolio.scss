@@ -93,7 +93,7 @@
 .section-portfolio__card {
   margin-bottom: 30px;
   @include respond-to(tablet) {
-    max-width: 354px;
+    max-width: 370px;
     flex-basis: calc((100% - 60px) / 2);
     margin-right: 30px;
   }
