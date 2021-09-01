@@ -11,6 +11,10 @@
 .page-header__social {
   @extend %list;
   @extend %flex;
+  @media (max-width: 767px) {
+    position: absolute;
+    transform: translate(-9px, 480px);
+  }
 
   &-item {
     padding: 0 10px;
@@ -80,7 +84,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    transform: translateX(42px) translateY(-100px);
+    transform: translateX(42px) translateY(-250px);
     display: flex;
     flex-direction: column-reverse;
   }
