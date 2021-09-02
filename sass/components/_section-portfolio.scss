@@ -1,15 +1,18 @@
 .section-portfolio {
-  @extend %section;
-
-  @media (max-width: 1199px) {
+  @media (min-width: 768px) and (max-width: 1199px) {
     padding: 60px 15px;
   }
-  @include respond-to(desktop) {
+  @include respond-to(tablet) {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
 .section-portfolio__list {
   display: flex;
+  @media (max-width: 767px) {
+    margin-bottom: 0px;
+  }
   @media (max-width: 1199px) {
     padding: 60px 15px;
     flex-wrap: wrap;

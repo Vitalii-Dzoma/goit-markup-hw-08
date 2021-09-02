@@ -22,20 +22,28 @@
             <a href="https://vitalii-dzoma.github.io/goit-markup-hw-01/" class="header-link "><span
                     class="web-logo">Web</span>Studio</a>
             <nav class="navigation">
-                <button type="button" class="button-menu is-open" data-menu-button
+                <button type="button" class="button-menu is-open js-open-menu" data-menu-button
                     aria-label="Переключатель мобильного меню" aria-expanded="false" aria-controls="menu-container">
                     <svg class="button-mobile " width="40px" height="40px">
-                        <use class="icon-cross" href="./images/icons.svg#icon-cross">
+                        <!-- <use class="icon-cross" href="./images/icons.svg#icon-cross">
     
-                        </use>
+                            </use> -->
                         <use class="icon-menu" href="./images/icons.svg#icon-menu">
     
                         </use>
                     </svg>
                 </button>
-                <div class="menu-container" id="menu-container" data-menu>
+                <div class="menu-container js-menu-container" id="menu-container" data-menu>
+                    <button type="button" class="button-close js-close-menu" aria-label="Переключатель мобильного меню"
+                        aria-expanded="false" aria-controls="menu-container">
+                        <svg width="40px" height="40px">
+                            <use class="icon-cross" href="./images/icons.svg#icon-cross">
+    
+                            </use>
+                        </svg>
+                    </button>
                     <ul class="navigation-list">
-                        <li class="navigation-item"><a href="./index.html" class="navigation-link">Студия</a>
+                        <li class="navigation-item"><a href="./index.html" class="navigation-link ">Студия</a>
                         </li>
                         <li class="navigation-item"><a href="./portfolio.html" class="navigation-link navigation-link__current">Портфолио</a></li>
                         <li class="navigation-item"><a href="" class="navigation-link">Контакты</a></li>

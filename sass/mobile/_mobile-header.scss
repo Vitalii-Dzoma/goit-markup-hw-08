@@ -30,10 +30,10 @@
 
 .menu-container {
   background-color: var(--primary-backround-color);
+  transition: transform 250ms ease-in-out;
   &.is-open {
     display: flex;
     flex-direction: column;
-    overflow: scroll;
     justify-content: space-between;
   }
   @include respond-to(tablet) {
@@ -48,6 +48,7 @@
     height: 100vh;
     padding: 48px 40px;
     padding-bottom: 48px;
+    z-index: 99;
   }
 
   .button-close {
@@ -59,6 +60,10 @@
     border: none;
     @include respond-to(tablet) {
       display: none;
+    }
+    &:hover .icon-cross,
+    &:focus .icon-cross {
+      fill: var(--accent-color);
     }
   }
 
