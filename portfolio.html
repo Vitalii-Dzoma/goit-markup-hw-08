@@ -19,11 +19,11 @@
 
     <header class="page-header">
         <div class="container">
-            <a href="https://vitalii-dzoma.github.io/goit-markup-hw-01/" class="header-link "><span
+            <a href="https://vitalii-dzoma.github.io/goit-markup-hw-08/" class="header-link "><span
                     class="web-logo">Web</span>Studio</a>
             <nav class="navigation">
-                <button type="button" class="button-menu is-open js-open-menu" data-menu-button
-                    aria-label="Переключатель мобильного меню" aria-expanded="false" aria-controls="menu-container">
+                <button type="button" class="button-menu is-open js-open-menu" aria-expanded="false"
+                    aria-controls="mobile-menu">
                     <svg class="button-mobile " width="40px" height="40px">
                         <!-- <use class="icon-cross" href="./images/icons.svg#icon-cross">
     
@@ -33,23 +33,23 @@
                         </use>
                     </svg>
                 </button>
-                <div class="menu-container js-menu-container" id="menu-container">
-                    <button type="button" class="button-close js-close-menu" aria-label="Переключатель мобильного меню"
-                        aria-expanded="false" aria-controls="menu-container">
-                        <svg width="40px" height="40px">
+                <div class="menu-container js-menu-container" id="mobile-menu">
+                    <button type="button" class="button-close js-close-menu">
+                        <svg class="icon-cross" width="40px" height="40px">
                             <use class="icon-cross" href="./images/icons.svg#icon-cross">
     
                             </use>
                         </svg>
                     </button>
                     <ul class="navigation-list">
-                        <li class="navigation-item"><a href="./index.html" class="navigation-link ">Студия</a>
+                        <li class="navigation-item"><a href="" class="navigation-link navigation-link__current">Студия</a>
                         </li>
-                        <li class="navigation-item"><a href="./portfolio.html" class="navigation-link navigation-link__current">Портфолио</a></li>
+                        <li class="navigation-item"><a href="./portfolio.html" class="navigation-link">Портфолио</a></li>
                         <li class="navigation-item"><a href="" class="navigation-link">Контакты</a></li>
                     </ul>
                     <ul class="page-header__list">
-                        <li class="page-header__item"><a href="mailto:info@devstudio.com" class="page-header__link">
+                        <li class="page-header__item page-header__item--margin"><a href="mailto:info@devstudio.com"
+                                class="page-header__link">
                                 <svg class="page-header__icon" width="16px" height="12px">
                                     <use href="./images/icons.svg#icon-envelope"></use>
                                 </svg> info@devstudio.com</a>
@@ -90,7 +90,7 @@
                 <li class="section-portfolio__card">
                     <a href="" class="section-portfolio__link">
                     <div class="portfolio-wrapper">
-                    <img class="portfolio-wrapper__img" srcset="./images/img.webp, ./images/img@2x.webp" src="./images/img0.jpg" width="450"
+                    <img class="portfolio-wrapper__img" srcset="./images/img.webp 1x, ./images/img@2x.webp 2x" src="./images/img0.jpg" width="450"
                         height="294" alt="Пример веб-сайта" />
                    
                     <p class="portfolio-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
@@ -108,7 +108,7 @@
                 <li class="section-portfolio__card">
                     <a href="" class="section-portfolio__link">
                     <div class="portfolio-wrapper">
-                    <img class="portfolio-wrapper__img" srcset="./images/img1.webp, ./images/img1@2x.webp" src="./images/img1.jpg" width="450"
+                    <img class="portfolio-wrapper__img" srcset="./images/img1.webp 1x, ./images/img1@2x.webp 2x" src="./images/img1.jpg" width="450"
                         height="294" alt="Баскетбол" />
                 
                     <p class="portfolio-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
@@ -126,7 +126,7 @@
                     <a href="" class="section-portfolio__link">
                     <div class="portfolio-wrapper">
                     
-                    <img class="portfolio-wrapper__img" srcset="./images/img3.webp, ./images/img3@2x.webp" src="./images/img3.jpg"
+                    <img class="portfolio-wrapper__img" srcset="./images/img3.webp 1x, ./images/img3@2x.webp 2x" src="./images/img3.jpg"
                         width="450" height="294" alt="Ресторан морепродуктов" />
                     <p class="portfolio-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                       платформу для цифрового
@@ -143,7 +143,7 @@
                     <a href="" class="section-portfolio__link">
                     <div class="portfolio-wrapper">
                     
-                    <img class="portfolio-wrapper__img" srcset="./images/img4.webp, ./images/img4@2x.webp" src="./images/img4.jpg"
+                    <img class="portfolio-wrapper__img" srcset="./images/img4.webp 1x, ./images/img4@2x.webp 2x" src="./images/img4.jpg"
                         width="450" height="294" alt="Наушники" />
                     <p class="portfolio-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                       платформу для цифрового
@@ -160,7 +160,7 @@
                     <a href="" class="section-portfolio__link">
                     <div class="portfolio-wrapper">
                     
-                    <img class="portfolio-wrapper__img" srcset="./images/img6.webp, ./images/img6@2x.webp" src="./images/img6.jpg"
+                    <img class="portfolio-wrapper__img" srcset="./images/img6.webp 1x, ./images/img6@2x.webp 2x" src="./images/img6.jpg"
                         width="450" height="294" alt="Коробки" />
                     <p class="portfolio-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                       платформу для цифрового
@@ -177,7 +177,7 @@
                     <a href="" class="section-portfolio__link">
                     <div class="portfolio-wrapper">
                     
-                <img class="portfolio-wrapper__img" srcset="./images/img7.webp, ./images/img7@2x.webp" src="./images/img7.jpg"
+                <img class="portfolio-wrapper__img" srcset="./images/img7.webp 1x, ./images/img7@2x.webp 2x" src="./images/img7.jpg"
                     width="450" height="294" alt="Монитор iMac" />
                     <p class="portfolio-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                       платформу для цифрового
@@ -194,7 +194,7 @@
                     <a href="" class="section-portfolio__link">
                     <div class="portfolio-wrapper">
                     
-                    <img class="portfolio-wrapper__img" srcset="./images/img8.webp, ./images/img8@2x.webp" src="./images/img8.jpg"
+                    <img class="portfolio-wrapper__img" srcset="./images/img8.webp 1x, ./images/img8@2x.webp 2x" src="./images/img8.jpg"
                         width="450" height="294" alt="Открытая книга" />
                     <p class="portfolio-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                       платформу для цифрового
@@ -211,7 +211,7 @@
                     <a href="" class="section-portfolio__link">
                     <div class="portfolio-wrapper">
                     
-                    <img class="portfolio-wrapper__img" srcset="./images/img11.webp, ./images/img11@2x.webp" src="./images/img11.jpg"
+                    <img class="portfolio-wrapper__img" srcset="./images/img11.webp 1x, ./images/img11@2x.webp 2x" src="./images/img11.jpg"
                         width="450" height="294" alt="Лейбтаг" />
                     <p class="portfolio-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                       платформу для цифрового
@@ -228,7 +228,7 @@
                     <a href="" class="section-portfolio__link">
                     <div class="portfolio-wrapper">
                     
-                    <img class="portfolio-wrapper__img" srcset="./images/img12.webp, ./images/img12@2x.webp" src="./images/img12.jpg"
+                    <img class="portfolio-wrapper__img" srcset="./images/img12.webp 1x, ./images/img12@2x.webp 2x" src="./images/img12.jpg"
                         width="450" height="294" alt="Имитация печати на клавиатуре" />
                     <p class="portfolio-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                       платформу для цифрового

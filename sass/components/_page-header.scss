@@ -53,6 +53,16 @@
     color: var(--accent-color);
   }
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .page-header__link[href='mailto:info@devstudio.com'] {
+    padding-top: 21px;
+  }
+
+  .page-header__item.page-header__item--margin {
+    margin-bottom: 10px;
+  }
+}
+
 .page-header__link--current {
   color: var(--accent-color);
   font-weight: 500;
@@ -64,7 +74,9 @@
     text-decoration: none;
     line-height: 14px;
     font-size: 12px;
-    padding-top: 7px;
+
+    padding-bottom: 21px;
+
     display: block;
     color: var(--secondary-text-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -75,7 +87,8 @@
     }
   }
   @include respond-to(desktop) {
-    padding-top: 4px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 

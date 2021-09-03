@@ -4,7 +4,7 @@
   padding: 0;
   border: none;
   background-color: transparent;
-  margin-left: 130px;
+  margin-left: 250px;
   & .icon-menu {
     display: none;
   }
@@ -55,7 +55,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    transform: translate(370px, 15px);
+    transform: translate(400px, 15px);
     background: transparent;
     border: none;
     @include respond-to(tablet) {

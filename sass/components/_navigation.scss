@@ -1,5 +1,7 @@
 .navigation {
-  margin-left: 93px;
+  @include respond-to(tablet) {
+    margin-left: 93px;
+  }
 
   &-list {
     position: relative;
@@ -20,8 +22,10 @@
 
   @include respond-to(tablet) {
     font-size: 14px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 32px;
+    padding-bottom: 34px;
+    display: block;
+    line-height: 16px;
   }
 
   font-weight: 500;
