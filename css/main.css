@@ -1259,6 +1259,14 @@
   padding-bottom: 20px;
 }
 
+@media (min-width: 768px) and (max-width: 1199px) {
+  .item-container__spacing {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+}
+
 .item-title {
   font-size: 18px;
   line-height: 2;
@@ -1276,6 +1284,25 @@
 .portfolio-wrapper__img {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .item-title__spacing {
+    letter-spacing: 0.06em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .section-portfolio__link--flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+  }
 }
 
 .backdrop {
