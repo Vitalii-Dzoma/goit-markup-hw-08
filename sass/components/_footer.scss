@@ -34,6 +34,7 @@
     align-items: center;
   }
   @include respond-to(tablet) {
+    width: 768px;
     flex-wrap: wrap;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -106,9 +107,9 @@
 
 .subscribe {
   margin-left: auto;
-  margin-top: 8px;
 
   @media (max-width: 1199px) {
+    margin-top: 8px;
     display: flex;
     flex-direction: column;
     margin-right: auto;
@@ -128,6 +129,7 @@
 .subscribe-input {
   @media (max-width: 767px) {
     min-width: 320px;
+    margin-bottom: 20px;
   }
 
   min-height: 50px;

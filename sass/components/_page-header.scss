@@ -62,6 +62,12 @@
     margin-bottom: 10px;
   }
 }
+@include respond-to(desktop) {
+  .page-header__link[href='mailto:info@devstudio.com'] {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
 
 .page-header__link--current {
   color: var(--accent-color);
@@ -87,8 +93,8 @@
     }
   }
   @include respond-to(desktop) {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
