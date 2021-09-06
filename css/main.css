@@ -2313,6 +2313,12 @@ p {
 
 .menu-container {
   background-color: var(--primary-backround-color);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation: translating 250ms cubic-bezier(0.4, 0, 0.2, 1);
+          animation: translating 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-container.is-open {
@@ -2326,6 +2332,10 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation: translate 250ms cubic-bezier(0.4, 0, 0.2, 1);
+          animation: translate 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media (min-width: 767px) {
@@ -2378,6 +2388,60 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+
+@-webkit-keyframes translating {
+  0% {
+    -webkit-transform: translate(-100%, -100%);
+            transform: translate(-100%, -100%);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@keyframes translating {
+  0% {
+    -webkit-transform: translate(-100%, -100%);
+            transform: translate(-100%, -100%);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+.menu-container.js-menu-container {
+  -webkit-animation: translate 250ms cubic-bezier(0.4, 0, 0.2, 1);
+          animation: translate 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-container.js-menu-container.is-open {
+  -webkit-animation: translative 250ms cubic-bezier(0.4, 0, 0.2, 1);
+          animation: translative 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@-webkit-keyframes translative {
+  0% {
+    -webkit-transform: translate(-100%, -100%);
+            transform: translate(-100%, -100%);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@keyframes translative {
+  0% {
+    -webkit-transform: translate(-100%, -100%);
+            transform: translate(-100%, -100%);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
 }
 /*# sourceMappingURL=main.css.map */
