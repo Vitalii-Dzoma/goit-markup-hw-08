@@ -31,9 +31,14 @@
 .section-portfolio__item:not(:last-child) {
   margin-right: 8px;
 }
-@media (max-width: 510px) {
-  .section-portfolio__item:nth-child(n + 4) {
-    margin-top: 15px;
+// @media (max-width: 510px) {
+//   .section-portfolio__item:nth-child(n + 4) {
+//     margin-top: 15px;
+//   }
+// }
+@media (max-width: 768px) {
+  .section-portfolio__item:nth-child(-n + 4) {
+    margin-bottom: 15px;
   }
 }
 
