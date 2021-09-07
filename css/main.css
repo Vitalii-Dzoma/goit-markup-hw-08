@@ -549,14 +549,6 @@
   }
 }
 
-@media (max-width: 767px) {
-  .page-header__social {
-    position: absolute;
-    -webkit-transform: translate(-9px, 460px);
-            transform: translate(-9px, 460px);
-  }
-}
-
 .page-header__social-item {
   padding: 0 10px;
 }
@@ -659,11 +651,6 @@
 
 @media screen and (max-width: 767px) {
   .page-header__list {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    -webkit-transform: translateX(42px) translateY(-50px);
-            transform: translateX(42px) translateY(-50px);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -733,6 +720,12 @@
 .page-header__link:hover .page-header__icon,
 .page-header__link:focus .page-header__icon {
   fill: var(--accent-color);
+}
+
+@media (max-width: 767px) {
+  .page-header__social-item:first-child {
+    padding-left: 0;
+  }
 }
 
 .header-link {
@@ -1380,6 +1373,12 @@
   margin: 0 auto;
 }
 
+@media (min-width: 1200px) {
+  .modal-form {
+    width: 448px;
+  }
+}
+
 .modal-wrapper {
   position: relative;
   margin-bottom: 30px;
@@ -1685,7 +1684,6 @@
 
 @media (max-width: 1199px) {
   .social {
-    margin-top: 7px;
     margin-bottom: 60px;
   }
 }
@@ -1814,9 +1812,8 @@
   .section__list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    margin-right: -30px;
+    margin-bottom: -30px;
   }
 }
 
@@ -1849,8 +1846,9 @@
 }
 
 @media (max-width: 1199px) {
-  .section__item:nth-child(-n + 5) {
+  .section__item {
     margin-bottom: 30px;
+    margin-right: 30px;
   }
 }
 
@@ -1927,6 +1925,9 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: space-evenly;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
@@ -1939,7 +1940,6 @@
 .footer-location {
   font-size: 14px;
   color: var(--primary-backround-color);
-  margin-bottom: 9px;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -2317,8 +2317,7 @@ p {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-animation: translating 250ms cubic-bezier(0.4, 0, 0.2, 1);
-          animation: translating 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-container.is-open {
@@ -2334,8 +2333,13 @@ p {
           justify-content: space-between;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-animation: translate 250ms cubic-bezier(0.4, 0, 0.2, 1);
-          animation: translate 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (max-width: 767px) {
+  .menu-container.is-open {
+    -webkit-animation: translating 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            animation: translating 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 @media (min-width: 767px) {
@@ -2368,8 +2372,8 @@ p {
   position: absolute;
   left: 0;
   top: 0;
-  -webkit-transform: translate(420px, 10px);
-          transform: translate(420px, 10px);
+  -webkit-transform: translate(460px, 10px);
+          transform: translate(460px, 10px);
   background: transparent;
   border: none;
 }
@@ -2415,16 +2419,6 @@ p {
   }
 }
 
-.menu-container.js-menu-container {
-  -webkit-animation: translate 250ms cubic-bezier(0.4, 0, 0.2, 1);
-          animation: translate 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.menu-container.js-menu-container.is-open {
-  -webkit-animation: translative 250ms cubic-bezier(0.4, 0, 0.2, 1);
-          animation: translative 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 @-webkit-keyframes translative {
   0% {
     -webkit-transform: translate(-100%, -100%);
@@ -2444,6 +2438,21 @@ p {
   100% {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
+  }
+}
+
+@media (max-width: 767px) {
+  .nav-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=main.css.map */
