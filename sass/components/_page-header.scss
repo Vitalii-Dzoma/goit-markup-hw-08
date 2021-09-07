@@ -53,6 +53,11 @@
     color: var(--accent-color);
   }
 }
+@media (max-width: 767px) {
+  .page-header__link[href='mailto:info@devstudio.com'] {
+    padding-bottom: 28px;
+  }
+}
 @media (min-width: 768px) and (max-width: 1199px) {
   .page-header__link[href='mailto:info@devstudio.com'] {
     padding-top: 21px;
@@ -75,6 +80,9 @@
   font-size: 34px;
   line-height: 40px;
   letter-spacing: 0.02em;
+  @media (max-width: 767px) {
+    padding-top: 28px;
+  }
 
   @include respond-to(tablet) {
     text-decoration: none;
@@ -106,6 +114,8 @@
   margin-top: 0;
   margin-bottom: 0;
   @media screen and (max-width: 767px) {
+    padding: 0;
+    margin-bottom: 10px;
     // position: absolute;
     // bottom: 0;
     // left: 0;

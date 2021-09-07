@@ -1,5 +1,10 @@
 .section {
-  @extend %section;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  @media (max-width: 767px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .section__list {
