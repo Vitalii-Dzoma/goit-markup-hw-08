@@ -2418,8 +2418,8 @@ p {
   position: absolute;
   left: 0;
   top: 0;
-  -webkit-transform: translate(430px, 10px);
-          transform: translate(430px, 10px);
+  -webkit-transform: translate(400px, 10px);
+          transform: translate(400px, 10px);
   background: transparent;
   border: none;
 }
