@@ -15,7 +15,9 @@
     margin-right: -30px;
     margin-bottom: -30px;
   }
-  @extend %list;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .section__link {

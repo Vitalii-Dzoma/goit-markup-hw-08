@@ -24,7 +24,7 @@
   min-width: 450px;
   @media (max-width: 1199px) {
     min-height: 609px;
-    transform: scale(0.9) translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
   background-color: var(--primary-backround-color);
   transform: scale(0.9) translate(-50%, -50%);
@@ -41,7 +41,7 @@
   }
 
   &-form {
-    width: 370px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -57,6 +57,9 @@
   @extend %flex;
   justify-content: flex-end;
 
+  @include respond-to(desktop) {
+    justify-content: center;
+  }
   &:nth-child(4) {
     margin-bottom: 20px;
   }
@@ -173,6 +176,9 @@
   border: 2px solid var(--primary-text-color);
   border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include respond-to(desktop) {
+    transform: translate(10px, 0px);
+  }
 }
 
 .modal-button {
@@ -247,6 +253,6 @@
 }
 
 .backdrop.is-hidden .modal {
-  transform: scale(1.1) translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
